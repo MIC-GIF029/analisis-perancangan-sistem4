@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Kirim feedback untuk membantu meningkatkan materi pembelajaran UML LAB.">
+  <title>Feedback — UML LAB.</title><link rel="stylesheet" href="css/style.css"><script src="js/app.js" defer></script>
+</head>
+<body data-page="feedback">
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+  <header class="site-header"><div class="header-inner container">
+    <a class="brand" href="index.html" aria-label="UML LAB, beranda"><span class="brand-mark">U</span><span class="brand-copy"><strong>UML <em>LAB.</em></strong><small>ANALISIS DAN PERANCANGAN SISTEM INFORMASI</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Buka navigasi"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Navigasi utama"><a class="nav-link" href="index.html">Beranda</a><a class="nav-link" href="index.html#materi">Materi</a><a class="nav-link" href="index.html#tentang">Tentang</a><a class="nav-link active" href="feedback.html">Feedback</a></nav>
+    <div class="header-actions"><a class="button button-lime button-small" href="index.html#materi">← KEMBALI KE MATERI</a></div>
+  </div></header>
+  <main id="main" class="feedback-page"><div class="container feedback-layout">
+    <section class="feedback-intro"><p class="eyebrow"><span class="eyebrow-line"></span> SUARA KAMU BERARTI</p><h1>Bagaimana pengalaman belajarmu?</h1><p>Masukanmu membantu kami memperjelas materi, memperbaiki diagram, dan membuat website ini lebih mudah digunakan.</p>
+      <div class="feedback-promise"><span class="promise-icon">✦</span><div><strong>Setiap masukan berarti.</strong><p>Isi formulir singkat ini berdasarkan pengalamanmu menggunakan UML LAB.</p></div></div>
+      <div class="feedback-illustration" aria-hidden="true"><div class="illustration-paper paper-back"></div><div class="illustration-paper paper-front"><span></span><span></span><span></span><b>UML LAB.</b></div><div class="illustration-spark">✳</div></div>
+    </section>
+    <section class="feedback-form-panel" aria-labelledby="formTitle"><div class="form-heading"><p class="eyebrow">FORMULIR FEEDBACK</p><h2 id="formTitle">Ceritakan pendapatmu</h2><p>Kolom bertanda <span class="required-mark">*</span> wajib diisi.</p></div>
+      <form id="feedbackForm">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+        <input type="hidden" name="subject" value="Feedback baru — UML LAB.">
+        <input type="hidden" name="from_name" value="UML LAB Feedback">
+        <div class="honeypot" aria-hidden="true"><label>Jangan isi kolom ini<input type="text" name="botcheck" tabindex="-1" autocomplete="off"></label></div>
+        <div class="form-row"><div class="form-field"><label for="feedbackName">Nama <span class="optional-label">(opsional)</span></label><input id="feedbackName" name="name" type="text" placeholder="Nama kamu" maxlength="80" autocomplete="name"></div><div class="form-field"><label for="feedbackEmail">Email <span class="optional-label">(opsional)</span></label><input id="feedbackEmail" name="email" type="email" placeholder="nama@email.com" autocomplete="email"></div></div>
+        <div class="form-field"><label for="feedbackTopic">Topik feedback <span class="required-mark">*</span></label><select id="feedbackTopic" name="topic" required><option value="" selected disabled>Pilih bagian yang ingin dinilai</option><option>Isi materi</option><option>Penjelasan relasi UML</option><option>Contoh diagram</option><option>Studi kasus pembelian</option><option>Navigasi dan tampilan</option><option>Masalah teknis</option><option>Lainnya</option></select></div>
+        <fieldset class="rating-field"><legend>Bagaimana penilaianmu? <span class="required-mark">*</span></legend><div class="rating-options"><label><input type="radio" name="rating" value="1" required><span><b>1</b><small>Kurang</small></span></label><label><input type="radio" name="rating" value="2"><span><b>2</b><small>Cukup</small></span></label><label><input type="radio" name="rating" value="3"><span><b>3</b><small>Baik</small></span></label><label><input type="radio" name="rating" value="4"><span><b>4</b><small>Bagus</small></span></label><label><input type="radio" name="rating" value="5"><span><b>5</b><small>Hebat</small></span></label></div></fieldset>
+        <div class="form-field"><label for="feedbackMessage">Pesan atau saran <span class="required-mark">*</span></label><textarea id="feedbackMessage" name="message" rows="5" minlength="8" maxlength="2000" placeholder="Apa yang sudah membantu? Apa yang perlu diperbaiki?" required></textarea><div class="field-hint"><span>Jangan masukkan kata sandi atau informasi sensitif.</span><span id="messageCount">0/2000</span></div></div>
+        <div class="form-error" id="formError" role="alert" hidden></div><div class="form-success" id="formSuccess" role="status" hidden><strong>Terima kasih!</strong><span>Feedback berhasil dikirim.</span></div>
+        <button class="button button-primary button-large button-block" id="submitFeedback" type="submit">Kirim Feedback <span aria-hidden="true">→</span></button><p class="form-privacy">Formulir menggunakan Web3Forms. Sebelum dipublikasikan, masukkan access key milikmu di kolom konfigurasi.</p>
+      </form>
+    </section>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand brand-footer" href="index.html"><span class="brand-mark">U</span><span class="brand-copy"><strong>UML <em>LAB.</em></strong><small>MEDIA PEMBELAJARAN UML</small></span></a><p>Terima kasih sudah membantu kami belajar lebih baik.</p><div class="footer-links"><a href="index.html">Beranda</a><a href="index.html#materi">Materi</a></div></div><div class="container footer-bottom"><span>Media pembelajaran untuk tujuan akademis.</span><a href="index.html">Kembali ke beranda ↑</a></div></footer>
+</body>
+</html>
